@@ -1,0 +1,8 @@
+
+
+
+<button mat-button routerLink="/register">Sign up</button>
+<button class="mat-raised-button" (click)="loginWithGoogle()">
+  Sign In with Google
+</button>
+<login-form (formData)="login($event)"></login-form>
