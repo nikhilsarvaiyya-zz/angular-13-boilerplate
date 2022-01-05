@@ -1,39 +1,10 @@
 <div class="flex flex-row block mt-2" >
   <div class="flex flex-col ">
     <ul class="flex flex-col">
-      <li>
+      
+      <li *ngFor="let item of routes">
         <a
-          routerLink="/login"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
-
-          "
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg text-gray-400
-            "
-            ><mat-icon>group</mat-icon></span
-          >
-          <span class="text-sm font-medium">Login</span>
-        </a>
-      </li>
-      <li>
-        <a
-          routerLink="/dashboard"
+          routerLink="/dashboard/{{item.path}}"
           class="
             flex flex-row
             items-center
@@ -57,141 +28,14 @@
               text-lg
               text-gray-400
             "
-            ><mat-icon>dashboard</mat-icon></span
+            ><mat-icon>{{item.icon}}</mat-icon></span
           >
-          <span class="text-sm font-medium ">Dashboard</span>
+          <span class="text-sm font-medium ">{{item.name}}</span>
         </a>
       </li>
-      <li>
-        <a
-          routerLink="/tree"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
-
-          "
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg text-gray-400
-            "
-            ><mat-icon>park</mat-icon></span
-          >
-          <span class="text-sm font-medium">Tree</span>
-        </a>
-      </li>
-      <li>
-        <a
-          routerLink="/table"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
-
-          "
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg text-gray-400
-            "
-            ><mat-icon>table_chart</mat-icon></span
-          >
-          <span class="text-sm font-medium">Table</span>
-        </a>
-      </li>
-      <li>
-        <a
-          routerLink="/form"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
-
-          "
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg text-gray-400
-            "
-            ><mat-icon>feed</mat-icon></span
-          >
-          <span class="text-sm font-medium">Form</span>
-        </a>
-      </li>
-      <li>
-        <a
-          routerLink="/drag-drop"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
-
-          "
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg text-gray-400
-            "
-            ><mat-icon>drag_indicator</mat-icon></span
-          >
-          <span class="text-sm font-medium">Drag Drop</span>
-        </a>
-      </li>
+      
     </ul>
   </div>
 </div>
 
-<!-- <a routerLink="/dashboard" routerLinkActive="active" mat-list-item
-        >Dashboard</a
-      >
-      <a routerLink="/table" routerLinkActive="active" mat-list-item>Table</a>
-      <a routerLink="/tree" routerLinkActive="active" mat-list-item>Tree</a>
-      <a routerLink="/form" routerLinkActive="active" mat-list-item>Form</a>
-      <a routerLink="/drag-drop" routerLinkActive="active" mat-list-item
-        >Drag Drop</a
-      > -->
+

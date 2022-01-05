@@ -20,8 +20,8 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./view/dashboard/dashboard.module').then(
-        (m) => m.DashboardModule
+      import('./view/layout/layout.module').then(
+        (m) => m.LayoutModule
       ),
     ...canActivate(redirectUnauthorizedToLogin),
   },
