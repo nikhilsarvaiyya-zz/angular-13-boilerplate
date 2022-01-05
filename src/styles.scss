@@ -5,7 +5,42 @@
 @import 'tailwindcss/utilities';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+font-size: 12px !important; }
 .spacer {
     flex: 1 1 auto;
 }
+
+.mat-toolbar {
+  
+  min-height: 48px !important; 
+  height: 48px !important;
+}
+
+.mat-toolbar-row {
+ 
+  min-height: 48px !important; 
+  height: 48px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgb(167, 167, 167);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(158, 158, 158);
+  }
