@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { LoginPageComponent } from './pages/login-page/login-page.component';
@@ -12,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),CommonModule],
   exports: [RouterModule],
 })
 export class AuthRoutingModule {}

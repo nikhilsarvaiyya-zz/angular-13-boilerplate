@@ -4,6 +4,7 @@ import {
   redirectLoggedInTo,
   redirectUnauthorizedTo,
 } from '@angular/fire/auth-guard';
+import { CommonModule } from '@angular/common';
 
 import { NgModule } from '@angular/core';
 
@@ -33,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),CommonModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

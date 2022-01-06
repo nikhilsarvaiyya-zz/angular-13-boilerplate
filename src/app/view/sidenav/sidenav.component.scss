@@ -1,0 +1,37 @@
+
+.sidebarBox{
+    
+}
+
+.sidebar{
+
+font-weight:500px
+}
+
+
+.sidebar ~ div{
+
+}
+
+.sidebar ~ div{
+    display: none;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.sidebarBox:hover > .sidebar ~ div{
+    display: block;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    
+}
+.sidebarBox:hover > .sidebar > .right-angle{
+    transform: rotate(90deg) translateY(2px);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+     
+}
+

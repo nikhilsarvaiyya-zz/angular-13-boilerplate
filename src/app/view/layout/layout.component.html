@@ -12,12 +12,12 @@
           <mat-toolbar class="logo bg-gray-300 dark:bg-gray-900">
             <span>JS Camp</span>
           </mat-toolbar>
-          <mat-nav-list>
+          
             <app-sidenav></app-sidenav>
-          </mat-nav-list>
+          
         </mat-sidenav>
         <mat-sidenav-content class="sidenav-content min-h-screen" fixedInViewport>
-          <mat-toolbar class="menu bg-gray-300 dark:bg-gray-900">
+          <mat-toolbar class="menu bg-gray-300 dark:bg-gray-900 fixed shadow">
             <button
               mat-icon-button
               class="example-icon"
@@ -44,7 +44,10 @@
             
           </mat-toolbar>
           <!-- container -->
+         <div class="pt-12">
           <router-outlet></router-outlet>
+         </div>
+            
         </mat-sidenav-content>
       </mat-sidenav-container>
     </div>

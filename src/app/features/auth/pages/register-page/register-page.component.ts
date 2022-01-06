@@ -18,6 +18,7 @@ export class RegisterPageComponent implements OnInit {
   ngOnInit(): void {}
 
   register(data: LoginData) {
+    
     this.authService
       .register(data)
       .then(() => this.router.navigate(['/login']))

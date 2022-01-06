@@ -7,11 +7,13 @@ import { LayoutComponent } from './layout.component';
 import { MaterialModule } from '../../core/modules/material.module';
 import { SidenavComponent } from '../sidenav/sidenav.component';
 import { TreeComponent } from '../schematic/tree/tree.component';
+
 @NgModule({
   declarations: [
     LayoutComponent,
     SidenavComponent,
-    TreeComponent
+    TreeComponent,
+  
   ],
   imports: [
     CommonModule,

@@ -19,22 +19,15 @@ import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-confi
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddressFormComponent } from './view/schematic/address-form/address-form.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatCardModule } from '@angular/material/card';
+import { MaterialModule } from './core/modules/material.module';
 import { TableComponent } from './view/schematic/table/table.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+
 import { DashboardOneComponent } from './view/schematic/dashboard-one/dashboard-one.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
+
 import { LayoutModule } from '@angular/cdk/layout';
 import { DragDropComponent } from './view/schematic/drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { UiKitComponent } from './view/schematic/uikit/ui-kit/ui-kit.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +36,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     TableComponent,
     DashboardOneComponent,
     DragDropComponent,
+    UiKitComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,21 +56,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     provideRemoteConfig(() => getRemoteConfig()),
     provideStorage(() => getStorage()),
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatGridListModule,
-    MatMenuModule,
-    MatIconModule,
+    MaterialModule,
     LayoutModule,
     DragDropModule,
-    
-
   ],
   providers: [
     ScreenTrackingService,

@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-
+  
   checked = false;
   isOpen = false
 

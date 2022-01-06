@@ -1,0 +1,27 @@
+<div class="bg-white">
+  <nav class="flex flex-col sm:flex-row">
+    <button
+      *ngFor="let tab of tabs; let i = index"
+      (click)="setTab(i)"
+      class="text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none "
+      [ngClass]="{'text-blue-500 border-b-2 font-medium border-blue-500': tabIndex === i}"
+      >
+      {{  i+1 }}
+    </button>
+    <!-- <button
+    (click)="setTab(1)"  
+    class="text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none"
+    >
+      Tab 2</button> -->
+  </nav>
+
+  <div *ngFor="let tab of tabs; let i = index">
+    <div
+      *ngIf="tabIndex === i"
+      id="{{ tabIndex }}"
+      class="p-3 overflow-y-auto overflow-x-hidden bg-gray-50"
+    >
+      <div>{{ i+1 }}</div>
+    </div>
+  </div>
+</div>

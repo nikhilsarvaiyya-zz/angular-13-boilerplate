@@ -1,41 +1,35 @@
-<div class="flex flex-row block mt-2" >
-  <div class="flex flex-col ">
-    <ul class="flex flex-col">
-      
-      <li *ngFor="let item of routes">
-        <a
-          routerLink="/dashboard/{{item.path}}"
-          class="
-            flex flex-row
-            items-center
-            h-12
-            transform
-            hover:translate-x-2
-            transition-transform
-            ease-in
-            duration-200
-            text-gray-500
+<div *ngFor="let item of routes" class="sidebarBox">
+  <a
+    class="flex pb-1 pt-2 px-3 cursor-pointer hover:bg-gray-50 sidebar "
+    routerLink="/dashboard/{{ item.path }}"
+  >
+    <div class="">
+      <mat-icon>{{ item.icon }}</mat-icon>
+    </div>
+    <div class="flex-1 px-2">
+      {{ item.name }}
+    </div>
+    <div class="right-angle" *ngIf="item.child">
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+  </a>
 
-"
-        >
-          <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              w-12
-              text-lg
-              text-gray-400
-            "
-            ><mat-icon>{{item.icon}}</mat-icon></span
-          >
-          <span class="text-sm font-medium ">{{item.name}}</span>
-        </a>
-      </li>
-      
-    </ul>
+  <div
+    class="flex pb-0 pt-1 px-3 cursor-pointer hover:bg-gray-50"
+    *ngFor="let item2 of item.child"
+  >
+    <a
+      class="w-full inline-flex font-light"
+      routerLink="/dashboard/{{ item.path }}/{{ item2.path }}"
+    >
+    <div class="">
+      <mat-icon></mat-icon>
+    </div>
+    <div class="flex-1 px-2">
+      {{ item2.name }}
+    </div>
+    
+    </a>
   </div>
 </div>
-
 
