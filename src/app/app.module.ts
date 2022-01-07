@@ -29,6 +29,8 @@ import { DragDropComponent } from './view/schematic/drag-drop/drag-drop.componen
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { UiKitComponent } from './view/schematic/uikit/ui-kit/ui-kit.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,9 @@ import { UiKitComponent } from './view/schematic/uikit/ui-kit/ui-kit.component';
     TableComponent,
     DashboardOneComponent,
     DragDropComponent,
-    UiKitComponent,
+    UiKitComponent
+   
+   
   ],
   imports: [
     BrowserModule,

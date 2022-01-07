@@ -1,5 +1,7 @@
 <div class="grid grid-cols-4 gap-4 p-4">
-    <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+    
+    <div *ngFor="let item of dataToDisplay" class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+       
         <a href="#">
             <img class="rounded-t-lg" src="assets/img/mountain.jpg" alt="">
         </a>

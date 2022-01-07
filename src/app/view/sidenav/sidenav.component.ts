@@ -17,8 +17,18 @@ export class SidenavComponent implements OnInit {
       path: "ui-kit",
       icon: "credit_card",
       child: [
-        { name: "Cards", path: "cards", icon: "credit_card" },
-        { name: "Tabs", path: "tabs", icon: "credit_card" },
+        { name: "Cards", path: "cards", },
+        { name: "Tabs", path: "tabs",  },
+      ],
+    },
+    {
+      name: "Users",
+      path: "users",
+      icon: "group",
+      child: [
+        { name: "Users", path: "user-list" },
+        { name: "Add User", path: "add-user" },
+       
       ],
     },
   ];
