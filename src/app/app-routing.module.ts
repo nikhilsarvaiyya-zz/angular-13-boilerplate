@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['']);
-const redirectLoggedInToHome = () => redirectLoggedInTo(['dashboard']);
+const redirectLoggedInToHome = () => redirectLoggedInTo(['app']);
 
 const routes: Routes = [
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
     ...canActivate(redirectLoggedInToHome),
   },
   {
-    path: 'dashboard',
+    path: 'app',
     loadChildren: () =>
       import('./wrapper/layout/layout.module').then(
         (m) => m.LayoutModule

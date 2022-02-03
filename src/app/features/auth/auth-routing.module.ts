@@ -8,9 +8,7 @@ import { RegisterPageComponent } from '../components/register-page/register-page
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
-
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes),CommonModule],
   exports: [RouterModule],

@@ -40,7 +40,9 @@
           <td class="p-2 whitespace-nowrap">
             <div class="text-left">{{item.mobile}}</div>
           </td>
-          
+          <td class="p-2 whitespace-nowrap">
+            <mat-icon (click)="removeUser(item._id)" >delete</mat-icon>
+          </td>   
         </tr>
         
       </tbody>

@@ -20,4 +20,7 @@ import { RegisterPageComponent } from '../components/register-page/register-page
     MatButtonModule,
   ],
 })
+
 export class AuthModule {}
+
+

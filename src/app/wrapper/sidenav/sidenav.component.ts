@@ -7,20 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SidenavComponent implements OnInit {
   routes = [
-    { name: "Dashboard", path: "dashboard-one", icon: "dashboard" },
-    { name: "Tree", path: "tree", icon: "park" },
-    { name: "Table", path: "table", icon: "table_chart" },
-    { name: "Form", path: "address-form", icon: "feed" },
-    { name: "Drad Drop", path: "drag-drop", icon: "drag_indicator" },
-    {
-      name: "UI Kit",
-      path: "ui-kit",
-      icon: "credit_card",
-      child: [
-        { name: "Cards", path: "cards", },
-        { name: "Tabs", path: "tabs",  },
-      ],
-    },
+    { name: "Dashboard", path: "dashboard", icon: "dashboard" },
     {
       name: "Users",
       path: "users",
@@ -28,7 +15,6 @@ export class SidenavComponent implements OnInit {
       child: [
         { name: "Users", path: "user-list" },
         { name: "Add User", path: "add-user" },
-       
       ],
     },
   ];
@@ -37,3 +23,27 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit(): void {}
 }
+
+// { name: "Tree", path: "tree", icon: "park" },
+// { name: "Table", path: "table", icon: "table_chart" },
+// { name: "Form", path: "address-form", icon: "feed" },
+// { name: "Drad Drop", path: "drag-drop", icon: "drag_indicator" },
+// {
+//   name: "UI Kit",
+//   path: "ui-kit",
+//   icon: "credit_card",
+//   child: [
+//     { name: "Cards", path: "cards", },
+//     { name: "Tabs", path: "tabs",  },
+//   ],
+// },
+// {
+//   name: "Users",
+//   path: "users",
+//   icon: "group",
+//   child: [
+//     { name: "Users", path: "user-list" },
+//     { name: "Add User", path: "add-user" },
+
+//   ],
+// },

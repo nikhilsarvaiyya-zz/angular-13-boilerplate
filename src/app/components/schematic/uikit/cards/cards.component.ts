@@ -1,25 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import {CatService} from '../../../../services/cat.service';
+import { Component, OnInit } from "@angular/core";
+
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.scss'],
-  providers: [CatService]
+  selector: "app-cards",
+  templateUrl: "./cards.component.html",
+  styleUrls: ["./cards.component.scss"],
 })
 export class CardsComponent implements OnInit {
-  dataToDisplay = []
+  dataToDisplay = [];
 
-  constructor(private service:CatService) {
+  constructor() {}
 
-    this.service.getAllCats().subscribe((data : any) => {
-      console.log({data})
-      this.dataToDisplay = data.cats;
-    });
-   }
-
-  ngOnInit(): void {
-  }
-
-
-  
+  ngOnInit(): void {}
 }
