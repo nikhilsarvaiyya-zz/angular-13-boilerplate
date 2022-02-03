@@ -9,18 +9,16 @@ font-weight:500px
 }
 
 
-.sidebar ~ div{
 
-}
 
-.sidebar ~ div{
+.sidebar > ul{
     display: none;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 }
 
-.sidebarBox:hover > .sidebar ~ div{
+ .sidebar:hover > ul{
     display: block;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

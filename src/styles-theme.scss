@@ -304,31 +304,31 @@ $altTheme: (
 // Specific component overrides, pieces that are not in line with the general theming
 
 // Handle buttons appropriately, with respect to line-height
-.mat-raised-button, .mat-stroked-button, .mat-flat-button {
-  padding: 0 1.15em;
-  margin: 0 .65em;
-  min-width: 3em;
-  line-height: 36.4px
-}
+// .mat-raised-button, .mat-stroked-button, .mat-flat-button {
+//   padding: 0 1.15em;
+//   margin: 0 .65em;
+//   min-width: 3em;
+//   line-height: 36.4px
+// }
 
-.mat-standard-chip {
-  padding: .5em .85em;
-  min-height: 2.5em;
-}
+// .mat-standard-chip {
+//   padding: .5em .85em;
+//   min-height: 2.5em;
+// }
 
-.material-icons {
-  font-size: 18px;
-  font-family: 'Material Icons', 'Material Icons';
-  .mat-badge-content {
-    font-family: 'Roboto';
-  }
-  height: 18px !important;
-  width: 18px !important;
-}
+// .material-icons {
+//   font-size: 18px;
+//   font-family: 'Material Icons', 'Material Icons';
+//   .mat-badge-content {
+//     font-family: 'Roboto';
+//   }
+//   height: 18px !important;
+//   width: 18px !important;
+// }
 
-.mat-toolbar-row, .mat-toolbar-single-row{
-  padding:0 8px !important
-}
-.mat-icon-button i, .mat-icon-button .mat-icon{
-  line-height:18px !important;
-}
+// .mat-toolbar-row, .mat-toolbar-single-row{
+//   padding:0 8px !important
+// }
+// .mat-icon-button i, .mat-icon-button .mat-icon{
+//   line-height:18px !important;
+// }

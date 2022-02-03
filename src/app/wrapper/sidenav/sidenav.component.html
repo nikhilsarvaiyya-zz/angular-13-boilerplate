@@ -1,0 +1,72 @@
+<div class="sidebarBox ">
+  <ul>
+    <li *ngFor="let item of routes" class="sidebar">
+      <a
+        class="flex p-3 hover:bg-blue-100 cursor-pointer place-items-center "
+        routerLink="/dashboard/{{ item.path }}"
+      >
+        <div class="">
+          <mat-icon>{{ item.icon }}</mat-icon>
+        </div>
+        <div class="flex-1 px-2">
+          {{ item.name }}
+        </div>
+        <div class="right-angle" *ngIf="item.child">
+          <mat-icon>chevron_right</mat-icon>
+        </div>
+      </a>
+
+      <ul class="">
+        <li *ngFor="let item2 of item.child">
+          <a
+            class="flex p-3 hover:bg-blue-100 cursor-pointer sidebar place-items-center "
+            routerLink="/dashboard/{{ item.path }}/{{ item2.path }}"
+          >
+            <div class="">
+              <mat-icon></mat-icon>
+            </div>
+            <div class="flex-1 px-2">
+              {{ item2.name }}
+            </div>
+           
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- <div *ngFor="let item of routes" class="sidebarBox">
+  <a
+    class="flex pb-1 pt-2 px-3 cursor-pointer hover:bg-gray-50 sidebar "
+    routerLink="/dashboard/{{ item.path }}"
+  >
+    <div class="">
+      <mat-icon>{{ item.icon }}</mat-icon>
+    </div>
+    <div class="flex-1 px-2">
+      {{ item.name }}
+    </div>
+    <div class="right-angle" *ngIf="item.child">
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+  </a>
+
+  <div
+    class="flex pb-0 pt-1 px-3 cursor-pointer hover:bg-gray-50"
+    *ngFor="let item2 of item.child"
+  >
+    <a
+      class="w-full inline-flex font-light"
+      routerLink="/dashboard/{{ item.path }}/{{ item2.path }}"
+    >
+    <div class="">
+      <mat-icon></mat-icon>
+    </div>
+    <div class="flex-1 px-2">
+      {{ item2.name }}
+    </div>
+    
+    </a>
+  </div>
+</div> -->

@@ -18,16 +18,16 @@ import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AddressFormComponent } from './view/schematic/address-form/address-form.component';
-import { MaterialModule } from './core/modules/material.module';
-import { TableComponent } from './view/schematic/table/table.component';
+import { AddressFormComponent } from './components/schematic/address-form/address-form.component';
+import { MaterialModule } from './modules/material.module';
+import { TableComponent } from './components/schematic/table/table.component';
 
-import { DashboardOneComponent } from './view/schematic/dashboard-one/dashboard-one.component';
+import { DashboardOneComponent } from './components/schematic/dashboard-one/dashboard-one.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
-import { DragDropComponent } from './view/schematic/drag-drop/drag-drop.component';
+import { DragDropComponent } from './components/schematic/drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { UiKitComponent } from './view/schematic/uikit/ui-kit/ui-kit.component';
+import { UiKitComponent } from './components/schematic/uikit/ui-kit/ui-kit.component';
 
 
 

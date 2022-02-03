@@ -21,7 +21,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./view/layout/layout.module').then(
+      import('./wrapper/layout/layout.module').then(
         (m) => m.LayoutModule
       ),
     ...canActivate(redirectUnauthorizedToLogin),
