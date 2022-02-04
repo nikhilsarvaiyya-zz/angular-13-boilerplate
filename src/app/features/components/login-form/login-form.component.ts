@@ -18,8 +18,8 @@ export class LoginFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
+      email: ['user@gmail.com', [Validators.required, Validators.email]],
+      password: ['user123', Validators.required],
     });
   }
 
@@ -32,6 +32,7 @@ export class LoginFormComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.form.value)
     this.formData.emit(this.form.value);
   }
 }
