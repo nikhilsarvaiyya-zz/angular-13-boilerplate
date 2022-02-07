@@ -12,7 +12,7 @@ var corsOptions = {
    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
 }
 // set our port =========================================================
-const port = 8000;
+const port = 8002;
 
 // config files =========================================================
 var db = require('./config/db');
@@ -40,8 +40,8 @@ io.on("connection", socket => {
    // ...
  });
 // frontend routes =========================================================
-var appRoutes = require('./app/routes/user');
-app.use('/api', appRoutes);
+var indexRoute = require('./app/routes/index');
+app.use('/', indexRoute);
 
 
 // startup our app at http://localhost:3000 =========================================================
